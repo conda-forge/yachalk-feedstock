@@ -1,5 +1,5 @@
 {% set name = "yachalk" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yachalk-{{ version }}.tar.gz
-  sha256: ee917e41c127a2302526aa169c6032f1505fab5a1045bd7a0c320b0194e8d992
+  sha256: 4f2ac54adef924fda03756a94c8b4b780bf8aecf80bbd6afa80e9f74d6cecc5f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
